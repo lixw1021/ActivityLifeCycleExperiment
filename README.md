@@ -1,10 +1,13 @@
-# Activity LifeCycle Experiment 
+# Android Activity Lifecycle Experiment 
 
-I am going to use an experiment to explain the Adroid Activity lifecycle
+I am going to use an experiment to explain the Android Activity lifecycle
 
 Tools:  1 MainActivity, 1 ChildActivity, 2 Buttons and 1 UP button
 
-### Step one: Start App
+ ![alt text](https://user-images.githubusercontent.com/24383706/29436686-ce54e4e8-837a-11e7-8fe4-aedcf595487a.JPG)
+ ![alt text](https://user-images.githubusercontent.com/24383706/29436688-cf88035e-837a-11e7-932c-c90c1018d435.JPG)
+
+### Step one: Launch App
 ```
 * I/Main screen: onCreate
 * I/Main screen: onStart
@@ -39,7 +42,7 @@ we can call finish() method or phone's "back" button in child activity to back t
 (for example call finish() method to save pet data into database in Lesson 2: Using a Database in an Android App)
 ```
 
-### Step Four: If we Click "UP" button at child screen
+### Step Four: If we Click "[UP](https://developer.android.com/training/articles/perf-anr.html)" button at child screen
 ```
 * I/Child screen: onPause
 * I/Main screen: onDestroy
@@ -56,6 +59,7 @@ So, when we need to update data for the previous activity,for example we update 
 preference in Networking lesson, we need to use "UP" Button or we can put method into onStart() method.
 
 ```
+
 ### Step Five: If we click pbone's home button at main screen
 ```
 * I/Main screen: onPause
@@ -66,7 +70,12 @@ like step six below
 ```
 
 ### Step Six: If we click app to go back
+```
 * I/Main screen: onStart
 * I/Main screen: onResume
-
-
+```
+```
+Note: During my studying process of Android Basics nano-degree in Udacity, and after debug some issues about loading or
+updating data using non-UI thread. I created this experiment to help me learn the activity lifecycle. and will do this
+again when come up with Fragment lifecycle.
+```
