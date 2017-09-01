@@ -42,7 +42,7 @@ we can call finish() method or phone's "back" button in child activity to back t
 (for example call finish() method to save pet data into database in Lesson 2: Using a Database in an Android App)
 ```
 
-### Step Four: If we Click "[UP](https://developer.android.com/training/articles/perf-anr.html)" button at child screen
+### Step Four: If we Click "[UP](https://developer.android.com/training/implementing-navigation/ancestral.html)" button at child screen
 ```
 * I/Child screen: onPause
 * I/Main screen: onDestroy
